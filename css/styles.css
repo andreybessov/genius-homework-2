@@ -1,0 +1,405 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v19-cyrillic-700.woff2') format('woff2');
+}
+
+:root{
+    --color-primary-light:#011C44;
+    --color-primary-dark:#000000;
+    --color-brand-light:#2B7FFF;
+    --color-brand-dark:#011C44;
+    --color-privacy-policy:#747272;
+    --color-white:#FFFFFF;
+    --color-bonus:#4A4A4A;
+}
+
+/* Base */
+
+*{
+    box-sizing: border-box;
+}
+body{
+   font-family: "Roboto", sans-serif;
+   color: var(--color-brand-dark);
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.5;
+   margin: 0;
+}
+address{
+    font-style: normal;
+}
+ul{
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Play", sans-selif;
+    margin-top: 0;
+}
+
+a{
+    display: inline-block;
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.section{
+    padding-bottom: 96px;
+}
+/* Header */
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-list{
+    display: flex;
+    gap: 56px;
+    padding: 0;
+    margin: 39.5px 0;
+}
+
+.link-header{
+    text-decoration: none;
+    color: var(--color-brand-dark);
+}
+
+.link-header:hover{
+    color: var(--color-brand-light);
+}
+
+.header-icon{
+    display: flex;
+    gap: 32px;
+    fill: var(--color-brand-dark);
+}
+
+.header-icon:hover{
+    fill: var(--color-brand-light);
+}
+/* Hero-section */
+.hero-section{
+    background: linear-gradient(89.38deg, #FFFFFF 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%), url(../images/hero-background.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-bottom: 126px;
+    padding: 96px;
+}
+.hero-content{
+    margin-left: 105px;
+}
+
+.hero-block{
+    width: 238px;
+}
+
+.hero-title{
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 1.2;
+    color: var(--color-brand-light);
+    text-transform: capitalize;
+    line-height: 114px;
+    margin-bottom: 40px;
+    width: 529px;
+}
+.button{
+    color: var(--color-white);
+    background-color: var(--color-brand-light);
+    border-radius: 32px;
+    border: 2px solid var(--color-brand-light);
+    cursor: pointer;
+    padding: 16px 32px;
+    font-weight: 600;
+}
+.button:hover{
+    color: var(--color-brand-dark);
+    background-color: transparent;
+}
+.hero-bonus{
+    color: var(--color-bonus);
+    font-size: 12px;
+}
+
+/* Info-Section */
+.info-title{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.1;
+    width: 529px;
+    margin-top: 40px;
+}
+.info-title span{
+    color: var(--color-brand-light);
+    text-transform: capitalize;
+}
+.info-text{
+    font-size: 22px;
+}
+.info-text span{
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.info-conteiner{
+    display: flex;
+    gap: 32px;
+}
+.info-content{
+    max-width: 709px;
+}
+.info-photo{
+    margin-top: 40px;
+    padding-left: 172px;
+}
+.photo-result{
+    border-radius: 50%;
+}
+
+
+/* Advantages-section */
+.section-advantages{
+    padding: 176px 0 96px 0;
+    background: linear-gradient(38.2deg, rgba(43, 127, 255, 0.2) 39.74%, rgba(43, 127, 255, 0) 54.16%, rgba(43, 127, 255, 0) 66.66%), url(../images/background-advantages.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.advantages-title{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.advantages-title span{
+    color: var(--color-brand-light);
+}
+.advantages-list{
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    color: var(--color-primary-dark);
+    margin-top: 0;
+    padding: 0;
+}
+.advantages-content{
+    box-shadow: 0px 4px 4px 0px #A8C6F561;
+    border-radius: 32px;
+    width: 316px;
+    height: 181px;
+    padding: 24px 32px;
+    text-align: center;
+}
+.advantages-icon{
+    fill: var(--color-brand-light);
+}
+.advantages-text{
+    margin: 0;
+}
+
+/* Services-section */
+
+.services-title{
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+}
+.services-conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.services-title span{
+    color: var(--color-brand-light);
+}
+.services-list{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+}
+.carousel-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    fill: var(--color-brand-dark);
+    flex-shrink: 0;
+}
+.carousel-button:hover{
+    background-color: #2B7FFF;
+    fill: var(--color-white);
+    border: 0;
+}
+.services-card{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 4px 120px;
+    width: 344px;
+    height: 456px;
+
+}
+.services-text{
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: center;
+    width: 152px;
+    color: var(--color-white);
+}
+.first-card{
+    background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%), url(../images/face-mask.jpg);
+}
+.second-card{
+    background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%), url(../images/botox.jpg);
+}
+.third-card{
+    background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%), url(../images/massage.jpg);
+}
+
+/* Contact-section */
+
+.contact-title{
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.contact-conteiner{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+.contact-title span{
+    color: var(--color-brand-light);
+}
+.contact-map{
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+}
+
+.form-title{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+.form-title span{
+    color: var(--color-brand-light);
+}
+
+/* Footer */
+
+.footer{
+    background-color: #011C44; 
+    background-image: url(../images/footer-background.png);
+    background-repeat: no-repeat;
+    padding: 56px 0;
+    /* correct later */
+}
+
+.footer-conteiner{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav,
+.footer-address{
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.footer-list,
+.footer-menu{
+    margin: 0;
+    padding: 0;
+    flex-basis: 50%;
+}
+
+.footer-logo{
+    flex-basis: 50%;
+}
+
+.link-footer{
+    font-size: 16px;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.address-info{
+    flex-basis: 50%;
+}
+
+
+.link-footer:hover{
+    color: var(--color-brand-light);
+}
+
+.address-link{
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 16px;
+}
+.address-link:hover{
+    color: var(--color-brand-light);
+}
+.footer-icon{
+    fill: var(--color-white);
+}
+.footer-icon:hover{
+    fill: var(--color-brand-light);
+}
+.policy{
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 16px;
+}
+.policy:hover{
+    color: var(--color-brand-light);
+}
+.address-copyright{
+    color: var(--color-privacy-policy);
+    font-size: 13px;
+}
