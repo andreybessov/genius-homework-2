@@ -221,6 +221,7 @@ a{
     height: 181px;
     padding: 24px 32px;
     text-align: center;
+    flex-shirk: 0;
 }
 .advantages-icon{
     fill: var(--color-brand-light);
