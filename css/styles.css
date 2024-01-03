@@ -59,7 +59,7 @@ ul{
     list-style-type: none;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2{
     font-family: "Play", sans-selif;
     margin-top: 0;
 }
@@ -191,9 +191,14 @@ a{
 /* Advantages-section */
 .section-advantages{
     padding: 176px 0 96px 0;
-    background: linear-gradient(38.2deg, rgba(43, 127, 255, 0.2) 39.74%, rgba(43, 127, 255, 0) 54.16%, rgba(43, 127, 255, 0) 66.66%), url(../images/background-advantages.png);
+}
+
+.thirst-section-background {
+    background-image: url(../images/background-advantages.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    height: 2940px;
 }
 
 .advantages-title{
@@ -221,7 +226,8 @@ a{
     height: 181px;
     padding: 24px 32px;
     text-align: center;
-    flex-shirk: 0;
+    flex-shrink: 0;
+    background-color: var(--color-white);
 }
 .advantages-icon{
     fill: var(--color-brand-light);
