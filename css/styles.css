@@ -77,6 +77,15 @@ a{
 .section{
     padding-bottom: 96px;
 }
+
+.page-background {
+    background-image: url(../images/background-advantages.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 2940px;
+}
+
 /* Header */
 .header-nav{
     display: flex;
@@ -191,14 +200,6 @@ a{
 /* Advantages-section */
 .section-advantages{
     padding: 176px 0 96px 0;
-}
-
-.thirst-section-background {
-    background-image: url(../images/background-advantages.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 2940px;
 }
 
 .advantages-title{
