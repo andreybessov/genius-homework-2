@@ -181,7 +181,9 @@ a{
 }
 .info-photo{
     margin-top: 40px;
-    padding-left: 172px;
+    display: flex;
+    width: 479px;
+    justify-content: flex-end;
 }
 .photo-result{
     border-radius: 50%;
