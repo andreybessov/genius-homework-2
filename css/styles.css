@@ -353,7 +353,6 @@ a{
 .footer-address{
     display: flex;
     flex-basis: 50%;
-    gap: 20px;
 }
 
 .footer-list,
@@ -363,8 +362,25 @@ a{
     flex-basis: 50%;
 }
 
+.footer-menu li:not(:first-child){
+    margin-top: 16px;
+}
+
+.footer-list li{
+    margin-bottom: 16px;
+}
+
 .footer-logo{
     flex-basis: 50%;
+}
+
+.footer-icon-menu{
+    display: flex;
+    gap: 24px;
+}
+
+.footer-address{
+    gap: 120px;
 }
 
 .link-footer{
