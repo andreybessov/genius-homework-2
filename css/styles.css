@@ -81,9 +81,7 @@ a{
 .page-background {
     background-image: url(../images/page-background.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 2940px;
+    background-size: cover;
 }
 
 /* Header */
