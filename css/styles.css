@@ -278,6 +278,11 @@ a{
     fill: var(--color-white);
     border: 0;
 }
+
+.next{
+    transform: rotate(180deg)
+}
+
 .services-card{
     display: flex;
     align-items: flex-end;
